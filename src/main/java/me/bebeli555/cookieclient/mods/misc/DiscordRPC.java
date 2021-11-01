@@ -18,19 +18,19 @@ public class DiscordRPC extends Mod {
 	public static Setting bottomText = new Setting(Mode.TEXT, "BottomText", "Playing on <server>", "The bottom text. <server> will be turned to the server ip if it has letters in it");
 	
 	public DiscordRPC() {
-		super(Group.MISC, "DiscordRPC", "Discord rich presence");
+		super(Group.MISC, "simpRPC", "Discord rich presence");
 		this.defaultOn = true;
 	}
 	
 	@Override
 	public void onEnabled() {
         DiscordEventHandlers handlers = new DiscordEventHandlers();
-        rpc.Discord_Initialize("837013588396081233", handlers, true, "");
+        rpc.Discord_Initialize("904796201835196478", handlers, true, "");
         presence.startTimestamp = System.currentTimeMillis() / 1000L;
         presence.details = topText.stringValue().replace("<username>", getUsername()) + " | v" + VERSION;
         presence.state = bottomText.stringValue().replace("<server>", getServer());
-        presence.largeImageKey = "cookieclientimage";
-        presence.largeImageText = "CookieClient is an utility client for anarchy servers. Github: github.com/bebeli555/CookieClient Discord: discord.gg/xSukBcyd8m";
+        presence.largeImageKey = "simp";
+        presence.largeImageText = "simp client is a hack client made for fun just for the simps";
         rpc.Discord_UpdatePresence(presence);
         
         thread = new Thread(() -> {
