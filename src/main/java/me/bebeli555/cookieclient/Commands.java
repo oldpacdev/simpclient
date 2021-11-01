@@ -109,7 +109,7 @@ public class Commands extends Mod {
 						Friends.addFriend(name);
 						sendMessage("Added " + name + " to friends", false);
 					} else {
-						sendMessage(name + " is already a friend", true);
+						sendMessage(name + "is already your simp ", true);
 					}
 				} catch (Exception e2) {
 					sendMessage("Invalid arguments", true);
