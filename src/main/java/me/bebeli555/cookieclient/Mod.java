@@ -135,8 +135,8 @@ import net.minecraftforge.fml.common.gameevent.TickEvent.ClientTickEvent;
 public class Mod {
     public static final String MODID = "simp client";
     public static final String NAME = "simpclient";
-    public static final String VERSION = "1.01";
-    public static final String DISCORD = "none";
+    public static final String VERSION = "1.0.0";
+    public static final String DISCORD = "https://discord.gg/3bVfEBMXFK";
     
     public static Minecraft mc = Minecraft.getMinecraft();
     public static final EventBus EVENT_BUS = new EventManager();
