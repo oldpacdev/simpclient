@@ -22,7 +22,7 @@ public class FakePlayer extends Mod {
 			return;
 		}
 		
-		fakePlayer = new EntityOtherPlayerMP(mc.world, new GameProfile(UUID.fromString("6ab32213-179a-4c41-8ab9-66789121e051"), "bebeli555"));
+		fakePlayer = new EntityOtherPlayerMP(mc.world, new GameProfile(UUID.fromString("cc549417-a453-4a1d-aa16-42443c308656"), "0b0p"));
 		fakePlayer.copyLocationAndAnglesFrom(mc.player);
 		fakePlayer.rotationYawHead = mc.player.rotationYawHead;
 		mc.world.addEntityToWorld(-100, fakePlayer);
