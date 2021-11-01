@@ -85,8 +85,8 @@ public class Gui extends GuiScreen {
 		timer.reset();
 		
 		//Draw background
-		drawRect(0, 0, 2000, 2000, 0x99000000);
-		drawRect(0, 0, 2000, 2000, 0x45000000);
+		drawRect(0, 0, 2000, 2000, 0xFFFFFFFF);
+		drawRect(0, 0, 2000, 2000,  0xFFD14752);
 		
 		visibleNodes.clear();
 		description = null;
@@ -116,11 +116,11 @@ public class Gui extends GuiScreen {
 			int infoWidth = mc.fontRenderer.getStringWidth(ChatFormatting.RED + "Discord: " + ChatFormatting.GREEN + Mod.DISCORD + 2);
 			drawRect(0, 0, infoWidth, 44, 0xFF000000);
 			drawRect(0, 43, infoWidth, 44, 0x99d303fc);
-			drawRect(infoWidth, 0, infoWidth + 1, 44, 0x99d303fc);
-			drawStringWithShadow(ChatFormatting.RED + Mod.NAME + ChatFormatting.GREEN + " v" + Mod.VERSION, 2, 2, 0xFF000000);
-			drawStringWithShadow(ChatFormatting.RED + "Made by: " + ChatFormatting.GREEN + "bebeli555", 2, 12, 0xFF000000);
-			drawStringWithShadow(ChatFormatting.RED + "Discord: " + ChatFormatting.GREEN + Mod.DISCORD, 2, 22, 0xFF000000);
-			drawStringWithShadow(ChatFormatting.RED + "Github: " + ChatFormatting.GREEN + "bebeli555/CookieClient", 2, 32, 0xFF000000);
+			drawRect(infoWidth, 0, infoWidth + 1, 44, 0xFF000000);
+			drawStringWithShadow(ChatFormatting.RED + Mod.NAME + ChatFormatting.GREEN + " v" + Mod.VERSION, 2, 2, 0xFFFFFFFF);
+			drawStringWithShadow(ChatFormatting.RED + "Made by: " + ChatFormatting.GREEN + "gplanet and da_90s", 2, 12, 0xFFFFFFFF);
+			drawStringWithShadow(ChatFormatting.RED + "Discord: " + ChatFormatting.GREEN + Mod.DISCORD, 2, 22, 0xFFFFFFFF);
+			drawStringWithShadow(ChatFormatting.RED + "Github: " + ChatFormatting.GREEN + "da_90s", 2, 32, 0xFFFFFFFF);
 			renderList.add(() -> GlStateManager.popMatrix());
 		}
 		
@@ -234,10 +234,10 @@ public class Gui extends GuiScreen {
 						int width = (int)mc.fontRenderer.getStringWidth(description[i]);
 						
 						if (left) {
-							drawRect(g.x2 - longestWidth, y - 2, g.x - 2, y + 10, 0xFF000000);
+							drawRect(g.x2 - longestWidth, y - 2, g.x - 2, y + 10, 0xFFFFFFFF);
 							drawStringWithShadow(description[i], (g.x2) - longestWidth + 2, ((g.y + 6) + (i * 10)), 0xffff);
 						} else {
-							drawRect(g.x2 + 8, y - 2, g.x2 + width + 12, y + 10, 0xFF000000);
+							drawRect(g.x2 + 8, y - 2, g.x2 + width + 12, y + 10, 0xFFFFFFFF);
 							drawStringWithShadow(description[i], (g.x2) + 10, ((g.y + 6) + (i * 10)), 0xffff);	
 						}
 					}
