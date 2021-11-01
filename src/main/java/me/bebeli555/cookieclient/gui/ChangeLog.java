@@ -12,46 +12,7 @@ public class ChangeLog extends Mod {
 	
 	public static String[] getChangeLog() {
 		String[] changelog = {
-				"version: v1.01",
-				"- Added AutoEnderpearl",
-				"- Added Hit to NoSlowDown",
-				"- Added ToggleOnSneak to Surround",
-				"- Added ToggleOnJump to Surround",
-				"- Added RenderBroken to PacketMine",
-				"- Added EnderChest setting to Burrow",
-				"- Added Potion amplifier to HUD-Potions",
-				"- Fixed AutoHotbar bug in GUIs",
-				"- Fixed NoRotate Desyncing",
-				"",
-				"version: v1.0",
-				"- Release!",
-				"- Added PistonAura",
-				"- Added AutoHotbar",
-				"- Improved Step",
-				"- Fixed some bugs",
-				"",
-				"version: v1.02-beta",
-				"- Added StashLogger",
-				"- Added AutoRespawn",
-				"- Added NoSound",
-				"- Added LiquidInteract",
-				"- Added Toggle mode to Surround",
-				"- Added Portal to NoRender",
-				"- Improved AutoCrystal",
-				"- Other stuff",
-				"",
-				"version: v1.01-beta",
-				"- Added PortalGodMode",
-				"- Added LiquidSpeed",
-				"- Added AutoTool",
-				"- Added Offhand",
-				"- Improved Scaffold",
-				"- Nametags now ignore dead people",
-				"- Fixed OnlyOwn breakmode in AutoCrystal",
-				"- Other stuff",
-				"",
-				"version: v1.0-beta",
-				"- Beta release!"
+				"version: 1.0.1"
 		};
 		
 		return changelog;
