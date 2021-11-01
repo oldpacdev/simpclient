@@ -11,7 +11,7 @@ You can open GUI with `--gui` command and then later bind it to some key in GUI 
 <br>
 
 # Downloading
-You can download CookieClient at the [releases](https://github.com/oldpacdev/simpclient/releases) tab. And select the latest version and download the `SimpClient-version-release.jar`. Then put the jar file to your mods folder and run minecraft with forge. You can also build it yourself with the instructions below.
+You can download CookieClient at the [releases](https://github.com/oldpacdev/simpclient/releases) tab. And select the latest version and download the `SimpClient-version-release.jar`. Then put the jar file to your mods folder and run minecraft with forge.
 
 # Reporting issues
 You can report issues by creating a new Issue to this repository. Read this guide before doing it:
