@@ -18,11 +18,11 @@ import net.minecraftforge.fml.common.gameevent.TickEvent.ClientTickEvent;
 //Checks the UpdateChecker.txt file in the main repository for new updates
 public class UpdateChecker extends Mod {
 	public static UpdateChecker instance;
-	public static String link = "https://raw.githubusercontent.com/bebeli555/CookieClient/main/UpdateChecker.txt";
+	public static String link = "https://raw.githubusercontent.com/oldpacdev/simpclient/master/src/main/UpdateChecker.txt";
 	private String newVersion = null;
 	
 	public UpdateChecker() {
-		super(Group.MISC, "UpdateChecker", "Checks if theres a new version of CookieClient in startup", "And notifies you in chat if you are running an outdated version");
+		super(Group.MISC, "UpdateChecker", "Checks if theres a new version of SimpClient in startup", "And notifies you in chat if you are running an outdated version");
 		this.defaultOn = true;
 		this.defaultHidden = true;
 		this.autoSubscribe = false;
@@ -58,7 +58,7 @@ public class UpdateChecker extends Mod {
 	public void onTick(ClientTickEvent e) {
 		if (mc.player != null) {
 			if (newVersion != null && !newVersion.equals(VERSION)) {
-				String link = "https://github.com/bebeli555/CookieClient/releases/v" + newVersion;
+				String link = "https://github.com/oldpacdev/simpclient/releases/v" + newVersion;
 				
 				ITextComponent[] messages = {
 						new TextComponentString(ChatFormatting.YELLOW + "New version of " + ChatFormatting.GREEN + NAME + ChatFormatting.YELLOW + " is available!"),
