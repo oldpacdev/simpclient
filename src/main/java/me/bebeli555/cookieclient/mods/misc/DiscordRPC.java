@@ -71,7 +71,7 @@ public class DiscordRPC extends Mod {
 		}
 		
 		if (!hasLetters) {
-			return "Unknown";
+			return ip;
 		} else {
 			return ip;
 		}
