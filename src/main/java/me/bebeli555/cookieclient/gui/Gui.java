@@ -84,13 +84,6 @@ public class Gui extends GuiScreen {
 		renderList.clear();
 		timer.reset();
 		
-		//Draw background
-		drawRect(0, 0, 2000, 2000, 0x99000000);
-		drawRect(0, 0, 2000, 2000, 0x45000000);
-		
-		visibleNodes.clear();
-		description = null;
-		
 		//Draw changelog
 		if (GuiSettings.changelog.booleanValue()) {
 			renderList.add(() -> ChangeLog.drawChangelog(mouseX, mouseY));
